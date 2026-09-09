@@ -41,7 +41,7 @@ jobs:
           fi
 
       - name: Upload APK artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: gms-flags-${{ github.event.inputs.build_type }}-apk
           path: core-entry/build/outputs/apk/${{ github.event.inputs.build_type }}/**/*.apk
